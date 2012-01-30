@@ -1,0 +1,459 @@
+html{
+	background:#fff url('../images/noise-white.jpg') repeat;
+}
+
+body{
+	background: transparent url('../images/pattern.png') repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	font-size:13px;
+	color:#666;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Start of Header Styles*/
+
+header#bar{
+	width:100%;
+	background:#f9f9f9;
+	margin:0;
+	padding:0;
+	border-bottom:3px solid #d7d7d7;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1000;
+}
+
+#bar #logo{
+	margin:10px 0;
+	height:50px;
+	float:left;
+}
+
+#bar #info{
+	padding:10px;
+	margin:0;
+	float:left;
+	line-height:20px;
+}
+
+#bar #info a{
+	display:block;
+}
+
+#bar #info a.profile{
+	font-size: 16px;
+	font-weight:bold;
+}
+
+#bar #info a.profile:hover{
+	background:none;
+	color:#914a4a;
+}
+
+#bar #info a.setting{
+	display:inline-block;
+	font-size:12px;
+}
+
+#bar #links{
+	float:right;
+	padding:0 10px;
+	margin:0;
+	line-height:65px;
+}
+
+#bar #links a{
+	font-size:16px;
+	padding:2px 10px;
+}
+/* End of Header Styles*/
+
+
+/* Start of Content Styles*/
+
+#main{
+	width:964px;
+	margin:100px auto 25px auto;
+}
+
+#main .content{
+	border:3px solid #ededed;
+	background:#fff;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+#main .inner-content{
+	overflow:hidden;
+}
+
+#main .inner-content .column{
+	float: left;
+	width: 320px;
+}
+
+#main .inner-content .column section{
+		margin: 0;
+		padding: 0;
+		position: relative;
+		border: 1px solid #ededed;
+		
+		border-radius:5px;
+}
+	
+	
+	#main .inner-content .column section div.sharer{
+		margin: 0 0 10px 0;
+		padding: 0;
+		min-height: 60px;
+		position: relative;
+	}
+	
+	#main .inner-content .column section div.sharer a.sharer-profile{
+		overflow: hidden;
+		display:block;
+		cursor: pointer;
+		padding:0;
+	}
+	
+	#main .inner-content .column section div.sharer a.sharer-profile:hover{
+		border-bottom: none;
+		background:none;
+	}
+	
+	#main .inner-content .column section div.sharer a.favourite{
+		background: transparent url('../images/star-sprite.png') no-repeat;
+		background-position: 0 -12px;
+		display: inline-block;
+		position: absolute;
+		height: 12px;
+		width: 12px;
+		top: 5px;
+		right: 0px;
+		-webkit-transition: 0.2s linear all;
+		-moz-transition: 0.2s linear all;
+		-ms-transition: 0.2s linear all;
+		-o-transition: 0.2s linear all;
+		transition: 0.2s linear all;	
+		cursor: pointer;
+	}
+	
+	
+	#main .inner-content .column section div.sharer a.favourite:hover{
+		border-bottom: none;
+		background-position: 0 4px;
+	}
+	
+#main .inner-content .column section div.sharer a.sharer-profile img{
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: 0px solid #fff;
+	}	
+
+#main .inner-content .column section div.sharer a.sharer-profile span.name{
+		 font-size: 13px;
+		 color: #342e3d;
+		 margin:0 0 0 60px;
+		 padding: 5px 0;
+		 display: block;
+		 font-weight: bold;
+		 font-family: Arial,Helvetica,Verdana,sans-serif;
+	}
+	
+#main .inner-content .column section div.sharer a.sharer-profile span.title{
+		font-size: 11px;
+		color: #333;
+		display: block;
+		padding-left: 60px;
+	}	
+	
+#main .inner-content .column section div.share-content{
+		margin: 15px 0;
+		
+	}
+	
+#main .inner-content .column section div.share-content .image{
+
+	}
+	
+#main .inner-content .column section div.share-content .image img{
+		width: 319px;
+	}
+	
+#main .inner-content .column section div.share-content .text{
+		padding: 0 15px;
+	}
+	
+#main .inner-content .column section div.share-content .text h2.text-title{
+		background: #ededed;
+		display: inline-block;
+		font-size: 14px;
+		padding:5px;
+	}
+	
+#main .inner-content .column section div.share-content .text p{
+		padding: 5px 0;
+	}
+	
+#main .inner-content .column section div.share-info{
+		text-align: right;
+		padding: 0 10px;
+		height: 20px;
+	}
+	
+#main .inner-content .column section div.share-info span.date{
+		line-height: 20px;
+		color: #c6c6c6;
+		font-size: 10px;
+	}
+	
+
+
+#main .inner-content .column section div.action{
+	border-top: 1px solid #ededed;
+	width: 320px;
+	height: 30px;
+	overflow: hidden;
+}
+
+
+#main .inner-content .column section div.action a.like{
+	float: left;
+	line-height: 30px;
+	color: #342e3d;
+	font-size: 11px;
+	margin: 0;
+	background: transparent url('../images/like.png') no-repeat;
+	background-position: 10px center;
+	padding: 0 10px 0 30px;
+	display:inline-block;
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;	
+}
+
+#main .inner-content .column section div.action a.like:hover{
+	background: #d48383 url('../images/like.png') no-repeat;
+	background-position: 10px center;
+}
+
+
+#main .inner-content .column section div.action a.dislike{
+	float: left;
+	line-height: 30px;
+	color: #342e3d;
+	margin: 0;
+	font-size: 11px;
+	background: transparent url('../images/dislike.png') no-repeat;
+	background-position: 10px center;
+	padding: 0 10px 0 30px;
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;	
+}
+
+#main .inner-content .column section div.action a.dislike:hover{
+	background: #d48383 url('../images/dislike.png') no-repeat;
+	background-position: 10px center;
+}
+
+#main .inner-content .column section div.action a.critique{
+	float: right;
+	line-height: 30px;
+	color: #342e3d;
+	padding: 0 10px 0 5px;
+	font-size: 11px;
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;
+}
+
+#main .inner-content .column section div.action a.critique:hover{
+	background: #d48383;
+}
+
+#main .inner-content .column section div.action a.critique span{
+	font-size: 10px;
+	line-height: 30px;
+	color: #893d3d;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main h1{
+	padding:15px 20px 15px 20px;
+	border-bottom:2px solid #ededed;
+	margin:0;
+}
+
+#main #share{
+	border-bottom:1px solid #ededed;
+	overflow:hidden;
+	margin:0;
+	padding:20px;
+}
+
+	#main #share button[type="submit"]{
+		padding:10px 15px;
+		font-size:14px;
+		font-weight:bold;
+		color:#fff;
+		text-shadow:0 1px 0 #000;
+		border-top-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		-webkit-border-top-right-radius: 10px;		
+		border-bottom-right-radius: 10px;
+		-moz-border-radius-bottomright: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		/* #0f6195 */
+		background:#893d3d;
+		border:3px solid #b46464;
+		-webkit-transition: 0.2s linear all;
+		-moz-transition: 0.2s linear all;
+		-ms-transition: 0.2s linear all;
+		-o-transition: 0.2s linear all;
+		transition: 0.2s linear all;
+	}
+
+	#main #share button[type="submit"]:hover{
+		border:3px solid #914a4a;
+	}
+
+	#main #share button[type="submit"]:active{
+		background:#632a2a;
+	}
+	
+		#main #share button[type="submit"]#share-submit{
+			float:right;
+		}
+		
+	#main #share input[type="text"]{
+		margin:0;
+		width:584px;
+		border:3px solid #ededed;
+		padding:10px 15px;
+		font-size:14px;
+		font-weight:bold;
+		color:#999;
+		border-top-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-webkit-border-top-left-radius: 10px;		
+		border-bottom-left-radius: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-webkit-transition: 0.2s linear all;
+		-moz-transition: 0.2s linear all;
+		-ms-transition: 0.2s linear all;
+		-o-transition: 0.2s linear all;
+		transition: 0.2s linear all;
+		float:left;
+	}
+	
+	#main #share input[type="text"]:focus{
+		outline:0;
+	}
+	
+	#main #share a.share-type{
+		margin:0;
+		float:left;
+		background:#ededed;
+		color:#333;
+		padding:10px 15px 9px 15px;
+		display:inline-block;
+		font-size:14px;
+		font-weight:bold;
+		border:3px solid #ededed;
+	}
+	
+	
+	#main #share a.share-type:hover{
+		
+	}
+	
+	#main #share a.share-type:active{
+		
+	}
+
+
+/* End of Content Styles*/
+
+
+/* Start of Footer Styles */
+
+footer{
+	width:100%;
+	height:30px;
+	background:#ededed;
+	margin:0;
+	padding:0;
+	border-top:3px solid #d7d7d7;
+}
+
+footer p{
+	line-height: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0 20px;
+	display:inline-block;
+}
+
+footer p.right{
+	float:right;
+}
+
+/* End of Footer Styles*/
+
+/* Global Styles */
+
+.content{
+	margin:0 auto;
+	width:960px;
+}
+
+.center{
+	text-align:center;
+}
+
+a{
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;
+	text-decoration:none;
+	color:#893d3d;
+	display:inline-block;
+	padding:2px 6px;
+}
+
+a:hover{
+	background:#893d3d;
+	color:#fff;
+}
+
+a:active{
+	background:#632a2a;
+}

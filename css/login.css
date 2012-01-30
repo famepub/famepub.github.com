@@ -1,0 +1,168 @@
+html{
+	
+}
+
+body{
+	background: #e1e1e1 url('../images/decorate.png') no-repeat center center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	font-size:13px;
+	color:#666;
+	-webkit-font-smoothing: antialiased;
+}
+
+header{
+	text-align:center;
+	margin:150px auto 50px auto;
+}
+
+header img#logo{
+	
+}
+
+#login{
+	width:400px;
+	margin:50px auto;
+}
+
+#login p{
+	text-align:center;
+}
+
+#login h2{
+	text-align:center;
+	font-size:24px;
+	text-shadow:0 1px 0 #fff;
+}
+
+#login form{
+	margin:15px 95px;
+}
+
+#login form p{
+	display:block;
+	margin:5px 0;
+	position:relative;
+}
+
+#login form p label{
+	font-size:16px;
+	font-weight:bold;
+	color:#666;
+	margin:15px 0;
+	text-align:center;
+	display:block;
+	text-shadow:0 1px 0 #fff;
+}
+
+#login form p input[type="text"]{
+	width:190px;
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+	color:#999;
+	border:1px solid #999;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+#login form p input[type="text"]:focus{
+	outline:0;
+}
+
+#login form p input[type="password"]{
+	width:190px;
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+	color:#999;
+	border:1px solid #999;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+#login form p input[type="password"]:focus{
+	outline:0;
+}
+
+#login form p button{
+	margin:15px 0 5px 0;
+	width:190px;
+	padding:10px 0;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	text-shadow:0 1px 0 #000;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	/* #0f6195 */
+	background:#893d3d;
+	border:4px solid #b46464;
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;
+}
+
+#login form p button:hover{
+	border:4px solid #914a4a;
+}
+
+#login form p button:active{
+	background:#632a2a;
+}
+
+
+footer{
+	width:100%;
+	height:30px;
+	background:#ededed;
+	position:absolute;
+	bottom:0;
+	left:0;
+	border-top:3px solid #d7d7d7;
+}
+
+footer p{
+	line-height: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0 20px;
+	display:inline-block;
+}
+
+footer p.right{
+	float:right;
+}
+
+/* Global Styles */
+
+.center{
+	text-align:center;
+}
+
+a{
+	-webkit-transition: 0.2s linear all;
+	-moz-transition: 0.2s linear all;
+	-ms-transition: 0.2s linear all;
+	-o-transition: 0.2s linear all;
+	transition: 0.2s linear all;
+	text-decoration:none;
+	color:#893d3d;
+	display:inline-block;
+	padding:2px 6px;
+}
+
+a:hover{
+	background:#893d3d;
+	color:#fff;
+}
+
+a:active{
+	background:#632a2a;
+}
+
+
